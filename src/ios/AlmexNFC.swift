@@ -20,7 +20,7 @@ import CoreNFC
                 return response
             }, message: {
 
-            })
+            });
         }
     }
   }
