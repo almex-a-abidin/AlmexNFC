@@ -1,4 +1,4 @@
-package cordova-plugin-almex-nfc;
+package cordova.plugin.almex.nfc;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
