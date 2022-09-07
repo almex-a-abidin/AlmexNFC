@@ -1,5 +1,6 @@
 /********* AlmexNFC.m Cordova Plugin Implementation *******/
 
+import CDVPlugin
 import UIKit
 import CoreNFC
 
@@ -13,15 +14,15 @@ import CoreNFC
 
   @objc(scan:)
   func scan(_ command: CDVInvokedUrlCommand?) -> [AnyHashable: Any]? {
-    DispatchQueue.main.async {
-        if self.ndefController == nil {
-            self.ndefController = AlmexNFCDelegate(completed: { (response: [AnyHashable: Any]?, error: Error?) -> Void in
-                return response
-            }, message: {
+    if self.ndefController == nil {
+        self.ndefController = AlmexNFCDelegate(completed: { (response: [AnyHashable: Any]?, error: Error?) -> Void in
+            return response
+        }, message: {
 
-            });
-        }
+        });
     }
+
+    return nil
   }
 
 }
