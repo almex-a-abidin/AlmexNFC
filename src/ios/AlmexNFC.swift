@@ -1,6 +1,5 @@
 /********* AlmexNFC.m Cordova Plugin Implementation *******/
 
-import CDVPlugin
 import UIKit
 import CoreNFC
 
