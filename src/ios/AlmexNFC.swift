@@ -2,6 +2,7 @@
 
 import UIKit
 import CoreNFC
+import AlmexNFCDelegate
 
 @objc(AlmexNFC) class  AlmexNFC : CDVPlugin {
   var pluginResult =  CDVPluginResult(status: CDVCommandStatus_ERROR)
